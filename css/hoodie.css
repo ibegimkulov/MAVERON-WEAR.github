@@ -1,0 +1,95 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section {
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.01);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.product-card {
+  background: linear-gradient(145deg, #ffffff, #e6e9f0);
+  border-radius: 16px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 6px 6px 12px #bec6d1, -6px -6px 12px #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 12px 12px 24px #a0a9fb, -12px -12px 24px #ffffff;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-name {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.product-price {
+  margin-top: 8px;
+  color: #7f8c8d;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.product-title {
+  color: #000; /* черный цвет названия */
+}

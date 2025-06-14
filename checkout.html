@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа | MAVERON</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Оформление заказа</h1>
+        <form action="send_order.php" method="POST" class="order-form">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="text" name="phone" placeholder="Номер телефона" required>
+            <textarea name="cart" placeholder="Что вы хотите заказать?" rows="5" required></textarea>
+            <button type="submit">Отправить заказ</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAVERON - Магазин одежды</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Подключим иконки соцсетей из FontAwesome CDN (серо-белая тема) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p0UfIr+jf1Dzzv8kwhh3h9SNP/u9EvFzEdkzU7EE8KhB2i3qkGTpZQ5RBvHnVrLvFjU7Wf86c8FEFi6vMwF4w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <header> 
+  <div class="header-container">
+    <div class="logo">MAVERON</div>
+    <div id="cart">
+  <!-- Поиск остаётся как есть -->
+  <div class="search-wrapper">
+    <input type="text" id="search-input" placeholder="Поиск...">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <!-- Корзина и кнопка сброса в одной строке -->
+  <div class="cart-display">
+    <button id="reset-cart" title="Очистить корзину">🗑️</button>
+    🛒 Корзина: <span id="cart-count">0</span>
+    <a href="checkout.html" class="checkout-btn">📝 Оформить заказ</a>
+  </div>
+</div>
+
+   
+</header>
+  
+  <main>
+    <!-- Каталог товаров -->
+    <section class="catalog" id="catalog">
+      <!-- Товары динамически вставятся сюда JS -->
+    </section>
+    
+    <div class="categories">
+  <a href="tshirts.html" class="category-link">
+    <div class="category-item">
+      <img src="icons/tshirt.png" alt="Футболки" width="50" height="50">
+      <span>Футболки</span>
+    </div>
+  </a>
+
+  <a href="jeans.html" class="category-link">
+    <div class="category-item">
+      <img src="icons/jeans.png" alt="Джинсы" width="50" height="50">
+      <span>Брюки</span>
+    </div>
+  </a>
+
+  <a href="hoodies.html" class="category-link">
+    <div class="category-item">
+      <img src="icons/hoodie.png" alt="Худи" width="50" height="50">
+      <span>Худи</span>
+    </div>
+  </a>
+
+  <a href="sneakers.html" class="category-link">
+    <div class="category-item">
+      <img src="icons/sneakers.png" alt="Кроссовки" width="50" height="50">
+      <span>Кроссовки</span> 
+    </div>
+  </a>
+
+  <a href="caps.html" class="category-link">
+    <div class="category-item">
+      <img src="icons/cap.png" alt="Кепки" width="50" height="50">
+      <span>Кепки</span>
+    </div>
+  </a>
+</div>
+
+    <!-- О магазине -->
+    <section class="about-section">
+      <h2>О магазине MAVERON</h2>
+      <p>
+        MAVERON — современный магазин стильной одежды для тех, кто ценит качество и комфорт.
+        Мы предлагаем широкий ассортимент модной одежды по доступным ценам.
+      </p>
+    </section>
+
+    <!-- Соцсети -->
+    <section class="socials">
+  <a href="https://www.instagram.com/____ibu_____/" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://t.me/Iskander_115" target="_blank" class="social-icon">
+    <i class="fab fa-telegram"></i>
+  </a>
+  <a href="https://www.youtube.com/@PANDA-zr4wl" target="_blank" class="social-icon">
+    <i class="fab fa-youtube"></i>
+  </a>
+</section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
